@@ -29,3 +29,6 @@ class TestStringProcessor(TestCase):
 
     def test_min_one(self):
         self.assertEqual(self.sp.min("5"), 5, "Min of one number.")
+
+    def test_min_two(self):
+        self.assertEqual(self.sp.min("5,1"), 1, "Min of two numbers.")
