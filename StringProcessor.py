@@ -7,3 +7,8 @@ class StringProcessor:
             return len(string.split(","))
         else:
             return 1
+
+
+    def min(self, string):
+        if string == "":
+            return 0
