@@ -35,3 +35,8 @@ class TestStringProcessor(TestCase):
 
     def test_min_n(self):
         self.assertEqual(self.sp.min("5,3,4,1,6,8"), 1, "Length of six numbers.")
+
+    # Max
+
+    def test_max_empty(self):
+        self.assertEqual(self.sp.max(""), 0, "Max of empty string.")
