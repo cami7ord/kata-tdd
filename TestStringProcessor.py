@@ -31,4 +31,7 @@ class TestStringProcessor(TestCase):
         self.assertEqual(self.sp.min("5"), 5, "Min of one number.")
 
     def test_min_two(self):
-        self.assertEqual(self.sp.min("5,1"), 1, "Min of two numbers.")
+        self.assertEqual(self.sp.min("5,3"), 3, "Min of two numbers.")
+
+    def test_min_n(self):
+        self.assertEqual(self.sp.min("5,3,4,1,6,8"), 1, "Length of six numbers.")
