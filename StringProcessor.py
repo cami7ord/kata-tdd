@@ -37,3 +37,8 @@ class StringProcessor:
             return sum(numbers) / float(len(numbers))
         else:
             return int(string)
+
+
+    def process(self, string):
+        if string == "":
+            return 0
