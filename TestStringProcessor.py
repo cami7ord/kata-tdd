@@ -75,3 +75,6 @@ class TestStringProcessor(TestCase):
 
     def test_process_two(self):
         self.assertEqual(self.sp.process("5,3"), [2, 3, 5, 4], "Process of two numbers.")
+
+    def test_process_n(self):
+        self.assertEqual(self.sp.process("5,3,4,1,6,8"), [6, 1, 8, 4.5], "Process of six numbers.")
