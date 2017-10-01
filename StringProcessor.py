@@ -17,3 +17,8 @@ class StringProcessor:
             return min(numbers)
         else:
             return int(string)
+
+
+    def max(self, string):
+        if string == "":
+            return 0
