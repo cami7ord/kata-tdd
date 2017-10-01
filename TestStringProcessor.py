@@ -60,3 +60,6 @@ class TestStringProcessor(TestCase):
 
     def test_avg_two(self):
         self.assertEqual(self.sp.avg("5,3"), 4, "Average of two numbers.")
+
+    def test_avg_n(self):
+        self.assertEqual(self.sp.avg("5,3,4,1,6,8"), 4.5, "Average of six numbers.")
