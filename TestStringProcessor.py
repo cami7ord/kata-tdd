@@ -40,3 +40,6 @@ class TestStringProcessor(TestCase):
 
     def test_max_empty(self):
         self.assertEqual(self.sp.max(""), 0, "Max of empty string.")
+    
+    def test_max_one(self):
+        self.assertEqual(self.sp.max("5"), 5, "Max of one number.")
