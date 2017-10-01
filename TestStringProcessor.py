@@ -63,3 +63,9 @@ class TestStringProcessor(TestCase):
 
     def test_avg_n(self):
         self.assertEqual(self.sp.avg("5,3,4,1,6,8"), 4.5, "Average of six numbers.")
+
+
+    # Process String
+
+    def test_process_string(self):
+        self.assertEqual(self.sp.process(""), 0, "Process an empty string.")
