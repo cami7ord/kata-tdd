@@ -26,3 +26,6 @@ class TestStringProcessor(TestCase):
 
     def test_min_empty(self):
         self.assertEqual(self.sp.min(""), 0, "Min of empty string.")
+
+    def test_min_one(self):
+        self.assertEqual(self.sp.length("5"), 5, "Min of one number.")
