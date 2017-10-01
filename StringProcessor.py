@@ -4,6 +4,6 @@ class StringProcessor:
         if string == "":
             return 0
         elif "," in string:
-            return 2
+            return len(string.split(","))
         else:
             return 1
