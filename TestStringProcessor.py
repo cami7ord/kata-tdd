@@ -49,3 +49,8 @@ class TestStringProcessor(TestCase):
 
     def test_max_n(self):
         self.assertEqual(self.sp.max("5,3,4,1,6,8"), 8, "Max of six numbers.")
+
+    # Average
+
+    def test_avg_empty(self):
+        self.assertEqual(self.sp.avg(""), 0, "Average of empty string.")
