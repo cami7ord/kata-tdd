@@ -46,3 +46,6 @@ class TestStringProcessor(TestCase):
 
     def test_max_two(self):
         self.assertEqual(self.sp.max("5,3"), 5, "Max of two numbers.")
+
+    def test_max_n(self):
+        self.assertEqual(self.sp.max("5,3,4,1,6,8"), 8, "Max of six numbers.")
