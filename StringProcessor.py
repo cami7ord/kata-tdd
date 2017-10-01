@@ -12,5 +12,7 @@ class StringProcessor:
     def min(self, string):
         if string == "":
             return 0
+        elif "," in string:
+            return min(int(string[0]), int(string[2]))
         else:
             return int(string)
