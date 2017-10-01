@@ -8,7 +8,7 @@ class TestStringProcessor(TestCase):
     def setUpClass(cls):
         cls.sp = StringProcessor()
 
-    #Length
+    # Length
 
     def test_length_empty(self):
         self.assertEqual(self.sp.length(""), 0, "Length of empty string.")
@@ -21,3 +21,8 @@ class TestStringProcessor(TestCase):
 
     def test_length_n(self):
         self.assertEqual(self.sp.length("5,3,4,1,6,8"), 6, "Length of six numbers.")
+
+    # Min
+
+    def test_min_empty(self):
+        self.assertEqual(self.sp.min(""), 0, "Min of empty string.")
