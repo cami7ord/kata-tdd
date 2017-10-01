@@ -13,6 +13,7 @@ class StringProcessor:
         if string == "":
             return 0
         elif "," in string:
-            return min(int(string[0]), int(string[2]))
+            numbers = map(int, string.split(","))
+            return min(numbers)
         else:
             return int(string)
