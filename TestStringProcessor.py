@@ -54,3 +54,6 @@ class TestStringProcessor(TestCase):
 
     def test_avg_empty(self):
         self.assertEqual(self.sp.avg(""), 0, "Average of empty string.")
+
+    def test_avg_one(self):
+        self.assertEqual(self.sp.avg("5"), 5, "Average of one number.")
