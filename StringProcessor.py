@@ -33,6 +33,7 @@ class StringProcessor:
         if string == "":
             return 0
         elif "," in string:
-            return ((int(string[0]) + int(string[2]))/2)
+            numbers = map(int, string.split(","))
+            return sum(numbers) / float(len(numbers))
         else:
             return int(string)
