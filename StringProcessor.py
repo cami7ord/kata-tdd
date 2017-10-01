@@ -1,3 +1,4 @@
 class StringProcessor:
-    def length(string):
-        pass
+
+    def length(self, string):
+        return 0
