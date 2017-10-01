@@ -27,3 +27,8 @@ class StringProcessor:
             return max(numbers)
         else:
             return int(string)
+
+
+    def avg(self, string):
+        if string == "":
+            return 0
