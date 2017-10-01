@@ -32,3 +32,5 @@ class StringProcessor:
     def avg(self, string):
         if string == "":
             return 0
+        else:
+            return int(string)
