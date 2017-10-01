@@ -12,3 +12,6 @@ class TestStringProcessor(TestCase):
 
     def test_length_two(self):
         self.assertEqual(StringProcessor().length("5,3"), 2, "Length of two numbers.")
+
+    def test_length_n(self):
+        self.assertEqual(StringProcessor().length("5,3,4,1,6,8"), 6, "Length of six numbers.")
