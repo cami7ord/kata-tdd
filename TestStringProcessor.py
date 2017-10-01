@@ -68,4 +68,4 @@ class TestStringProcessor(TestCase):
     # Process String
 
     def test_process_string(self):
-        self.assertEqual(self.sp.process(""), 0, "Process an empty string.")
+        self.assertEqual(self.sp.process(""), [0, 0, 0, 0], "Process an empty string.")
