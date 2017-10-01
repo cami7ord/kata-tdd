@@ -42,5 +42,7 @@ class StringProcessor:
     def process(self, string):
         if string == "":
             return [0, 0, 0, 0]
+        elif "," in string:
+            return [2, self.min(string), self.max(string), self.avg(string)]
         else:
             return [1, int(string), int(string), int(string)]
