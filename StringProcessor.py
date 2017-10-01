@@ -22,5 +22,7 @@ class StringProcessor:
     def max(self, string):
         if string == "":
             return 0
+        elif "," in string:
+            return max(int(string[0]), int(string[2]))
         else:
             return int(string)
