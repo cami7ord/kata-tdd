@@ -23,6 +23,7 @@ class StringProcessor:
         if string == "":
             return 0
         elif "," in string:
-            return max(int(string[0]), int(string[2]))
+            numbers = map(int, string.split(","))
+            return max(numbers)
         else:
             return int(string)
